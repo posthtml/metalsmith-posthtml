@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-posthtml",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha2",
   "description": "PostHTML for Metalsmith",
   "main": "index.js",
   "engines": {"npm": ">=3", "node": ">=6"},
