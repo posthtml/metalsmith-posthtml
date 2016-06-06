@@ -1,0 +1,69 @@
+{
+  "name": "metalsmith-posthtml",
+  "version": "0.0.1",
+  "description": "PostHTML for Metalsmith",
+  "main": "index.js",
+  "engines": {
+    "npm": ">=3",
+    "node": ">=6"
+  },
+  "scripts": {
+    "clean": "echo '=> Cleaning' && sudo rm -rf .nyc_output coverage test/node_modules",
+    "pretest": "echo '=> Linting' && standard",
+    "test": "echo '=> Testing' && npm run clean && nyc ava './test/index.js'",
+    "start": "echo '=> Executing' && node index"
+  },
+  "ava": {
+    "babel": "inherit"
+  },
+  "nyc": {
+    "all": true,
+    "require": "babel-register",
+    "include": [
+      "lib",
+      "test"
+    ],
+    "extension": [
+      ".js"
+    ]
+  },
+  "standard": {
+    "ignore": []
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    },
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "posthtml": "^0.8.7",
+    "posthtml-load-config": "^1.0.0-alpha2"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.4",
+    "standard": "^7.1.2"
+  },
+  "author": {
+    "name": "Michael Ciniawsky",
+    "email": "<michael.ciniawsky@gmail.com>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posthtml/metalsmith-posthtml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posthtml/metalsmith-posthtml/issues"
+  },
+  "homepage": "https://github.com/posthtml/metalsmith-posthtml#readme",
+  "license": "MIT"
+}
