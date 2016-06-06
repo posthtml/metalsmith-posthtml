@@ -4,20 +4,23 @@
 
 'use strict'
 
+const posthtmlrc = require('posthtml-load-config')
+
 function posthtml (options) {
   return function (files, metalsmith, done) {
-    setImmediate(done)
-
-    Object.keys(files).forEach(function (file) {
-      let data = files[file]
-
-      require('posthtml-load-config')()
+    posthtmlrc()
       .then(({ plugins, options }) => {
-        require('posthtml')(plugins)
-          .process(data, options)
-          .then((result) => done(result.html))
+        Object.keys(files).forEach((file) => {
+          let html = files[file].contents.toString()
+
+          require('posthtml')(plugins)
+            .process(html, options)
+            .then((result) => {
+              files[file].contents = new Buffer(result.html)
+              done()
+            })
+        })
       })
-    }
   }
 }
 
