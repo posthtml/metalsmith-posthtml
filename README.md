@@ -6,11 +6,10 @@
 
 
 <div align="center">
-  <img width="220" heigth="125" title="Metalsmith" src="https://worldvectorlogo.com/logos/metalsmith.svg">
+  <img width="220" heigth="125" title="Metalsmith" src="https://avatars0.githubusercontent.com/u/16531417?v=3&s=200">
   <img width="220" height="150" title="PostHTML" src="http://posthtml.github.io/posthtml/logo.svg">
 </div>
 
-# ! WIP
 # Metalsmith PostHTML
 
 ## Install
@@ -21,8 +20,24 @@
 
 ## Usage
 
-```js
+PostHTML Setup via [posthtml-load-config][load-config]
 
+[load-config]: https://github.com/posthtml/posthtml-load-config
+
+```js
+'use strict'
+
+const metalsmith = require('metalsmith')
+
+const posthtml = require('metalsmith-posthtml')
+
+metalsmith(__dirname)
+    .source('./src')
+    .destination('./dest')
+    .use(posthtml())
+    .build((err) => {
+      if (err) throw err
+    })
 ```
 
 ## LICENSE [![License MIT][license]][license-url]
@@ -49,7 +64,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[npm]: https://img.shields.io/npm/v/posthtml-metalsmith.svg
+[npm]: https://img.shields.io/npm/v/metalsmith-posthtml.svg
 [npm-url]: https://npmjs.com/package/metalsmith-posthtml
 
 [node]: https://img.shields.io/node/v/gh-badges.svg?maxAge=2592000
