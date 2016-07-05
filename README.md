@@ -36,7 +36,7 @@ metalsmith(__dirname)
     })
 ```
 
-#### [PostHTML Load Config][load-config]
+#### [Autoload Config][load-config]
 
 [load-config]: https://github.com/posthtml/posthtml-load-config
 
