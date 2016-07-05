@@ -3,7 +3,10 @@
   "version": "1.0.0-alpha2",
   "description": "PostHTML for Metalsmith",
   "main": "index.js",
-  "engines": {"npm": ">=3", "node": ">=6"},
+  "engines": {
+    "npm": ">=3",
+    "node": ">=6"
+  },
   "scripts": {
     "clean": "echo '=> Cleaning' && sudo rm -rf .nyc_output coverage test/node_modules",
     "pretest": "echo '=> Linting' && standard",
@@ -16,8 +19,13 @@
   "nyc": {
     "all": true,
     "require": "babel-register",
-    "include": ["lib", "test"],
-    "extension": [".js"]
+    "include": [
+      "lib",
+      "test"
+    ],
+    "extension": [
+      ".js"
+    ]
   },
   "standard": {
     "ignore": []
@@ -33,9 +41,14 @@
     }
   },
   "babel": {
-    "env": {"development": {"sourceMaps": "inline"}
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
     },
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "dependencies": {
     "posthtml": "^0.8.7",
@@ -43,7 +56,7 @@
   },
   "devDependencies": {
     "ava": "^0.15.2",
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.10.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-register": "^6.9.0",
     "coveralls": "^2.11.9",
