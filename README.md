@@ -5,7 +5,7 @@
 [![Standard Code Style][style]][style-url]
 [![Chat][chat]][chat-badge]
 
-# Metalsmith PostHTML <img width="200" height="220" title="PostHTML" src="http://posthtml.github.io/posthtml/logo.svg">
+# Metalsmith PostHTML <img align="right" width="200" height="220" title="PostHTML" src="http://posthtml.github.io/posthtml/logo.svg">
 
 ## Install
 
