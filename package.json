@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-posthtml",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0",
   "description": "PostHTML for Metalsmith",
   "main": "index.js",
   "engines": {
@@ -8,10 +8,10 @@
     "node": ">=6"
   },
   "scripts": {
-    "clean": "echo '=> Cleaning' && sudo rm -rf .nyc_output coverage test/node_modules",
+    "clean": "echo '=> Cleaning' && sudo rm -rf .nyc_output coverage",
     "pretest": "echo '=> Linting' && standard",
-    "test": "echo '=> Testing' && npm run clean && nyc ava './test/index.js'",
-    "start": "echo '=> Executing' && node index"
+    "test": "echo '=> Testing' && npm run clean && nyc ava 'test/index.js'",
+    "start": "echo '=> Starting' && sudo npm test"
   },
   "ava": {
     "babel": "inherit"
@@ -26,9 +26,6 @@
     "extension": [
       ".js"
     ]
-  },
-  "standard": {
-    "ignore": []
   },
   "posthtml": {
     "sync": false,
