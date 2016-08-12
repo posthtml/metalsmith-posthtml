@@ -57,7 +57,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-register": "^6.11.6",
     "coveralls": "^2.11.12",
-    "metalsmith": "^2.1.0",
+    "metalsmith": "^2.2.0",
     "nyc": "^7.1.0",
     "posthtml-bem": "^0.2.2",
     "standard": "^7.1.2"
