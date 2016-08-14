@@ -58,7 +58,7 @@
     "babel-register": "^6.11.6",
     "coveralls": "^2.11.12",
     "metalsmith": "^2.2.0",
-    "nyc": "^7.1.0",
+    "nyc": "^8.1.0",
     "posthtml-bem": "^0.2.2",
     "standard": "^7.1.2"
   },
