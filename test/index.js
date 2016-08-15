@@ -2,15 +2,19 @@
 // #METALSMITH - POSTHTML - TEST
 // ------------------------------------
 
-'use strict'
+const test = require('ava')
 
-const metalsmith = require('metalsmith')
 const posthtml = require('../')
+const metalsmith = require('metalsmith')
 
-metalsmith(__dirname)
+test('metalsmith-posthtml', (t) => {
+  const plugins = [ require('posthtml-bem')() ]
+  const options = {}
+  metalsmith(__dirname)
     .source('./fixtures')
     .destination('./expect')
-    .use(posthtml())
+    .use(posthtml(plugins, options))
     .build((err) => {
       if (err) throw err
     })
+})
