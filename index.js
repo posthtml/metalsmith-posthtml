@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  *@module metalsmith-posthtml
  *@author Michael Ciniawsky (@michael-ciniawsky)
