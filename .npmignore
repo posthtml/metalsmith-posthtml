@@ -3,13 +3,11 @@
 .travis.yml
 .gitignore
 .editorconfig
+.mversionrc
 
 CHANGELOG.md
 CONTRIBUTING.md
 README.md
-
-exec.js
-*.test.js
 
 npm-debug.log
 
