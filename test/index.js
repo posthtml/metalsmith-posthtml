@@ -1,6 +1,4 @@
-// ------------------------------------
-// #METALSMITH - POSTHTML - TEST
-// ------------------------------------
+'use strict'
 
 const test = require('ava')
 
@@ -10,6 +8,7 @@ const metalsmith = require('metalsmith')
 test('metalsmith-posthtml', (t) => {
   const plugins = [ require('posthtml-bem')() ]
   const options = {}
+
   metalsmith(__dirname)
     .source('./fixtures')
     .destination('./expect')
