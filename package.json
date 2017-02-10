@@ -25,7 +25,7 @@
     "conventional-changelog": "^1.1.0",
     "conventional-changelog-lint": "^1.0.0",
     "coveralls": "^2.11.12",
-    "jsdoc-to-markdown": "^2.0.0",
+    "jsdoc-to-markdown": "^3.0.0",
     "metalsmith": "^2.3.0",
     "mversion": "^1.10.1",
     "nyc": "^10.0.0",
