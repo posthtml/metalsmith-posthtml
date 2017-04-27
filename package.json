@@ -24,7 +24,7 @@
     "ava": "^0.19.1",
     "conventional-changelog": "^1.1.0",
     "conventional-changelog-lint": "^1.0.0",
-    "coveralls": "^2.11.12",
+    "coveralls": "^2.13.1",
     "jsdoc-to-markdown": "^3.0.0",
     "metalsmith": "^2.3.0",
     "mversion": "^1.10.1",
