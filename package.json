@@ -28,7 +28,7 @@
     "jsdoc-to-markdown": "^3.0.0",
     "metalsmith": "^2.3.0",
     "mversion": "^1.10.1",
-    "nyc": "^10.0.0",
+    "nyc": "^10.3.0",
     "posthtml-bem": "^0.2.2",
     "standard": "^10.0.2"
   },
